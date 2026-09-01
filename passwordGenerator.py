@@ -2,6 +2,7 @@ import secrets
 import os 
 
 def get_words_dictionary():
+    # See https://github.com/dwyl/english-words/blob/master/words_alpha.txt
     clean_words = []
     with open("words_alpha.txt") as words_file:
         for word in words_file.readlines():
